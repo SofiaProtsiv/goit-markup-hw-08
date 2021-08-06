@@ -1,0 +1,32 @@
+@import "./utils/variables";
+@import "./components/button";
+
+@import "./components/header/header-logo-style";
+@import "./components/header/nav";
+@import "./components/header/site-nav";
+@import "./components/header/auth-nav";
+
+@import "./components/hero";
+
+@import "./components/modal/backdrop";
+@import "./components/modal/modal";
+@import "./components/modal/modal-form";
+@import "./components/modal/modal-form-field";
+@import "./components/modal/modal-form-acsses";
+
+@import "./components/features";
+
+@import "./components/work";
+
+@import "./components/team";
+
+@import "./components/socialmedia";
+@import "./components/clients";
+
+@import "./components/footer/footer";
+@import "./components/footer/location";
+@import "./components/footer/network";
+@import "./components/footer/subscription-form";
+
+@import "./components/portfolio-main/filter-portfolio";
+@import "./components/portfolio-main/cardset";

@@ -1,0 +1,92 @@
+.modal-form-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+    .modal-form-field__label{
+        margin-bottom: 4px;
+    
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $title-text-color;
+    }
+
+    .modal-form-field__input{
+        padding: 14px 15px 14px 43px;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        transition: border 250ms $transition;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            border: 1px solid $accent-color;
+            outline: none;
+            border-radius: 4px;
+        }
+    }
+
+    .modal-form-field__icon{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        left: 15px;
+        fill: black;
+    
+        transition: fill 250ms $transition;
+
+        .modal-form-field:focus-within &, .modal-form-field:hover &{
+            fill: #2196f3;
+        }
+    }
+
+    .modal-form-field__textarea{
+        width: 448px;
+        height: 120px;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+    
+        letter-spacing: 0.01em;
+        
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        cursor: pointer;
+
+        &:hover, &:focus{
+            border: 1px solid $accent-color;
+            outline: none;
+            border-radius: 4px;
+        }
+
+        &::placeholder{
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    .modal-form-field__button{
+        width: 200px;
+        height: 50px;
+        padding: 10px 55px;
+    
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.8;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $address;
+    
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: $accent-color;
+    
+        cursor: pointer;
+    }

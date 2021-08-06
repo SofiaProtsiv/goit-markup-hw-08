@@ -1,0 +1,34 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.social-media__item{
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+.social-media__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 44px;
+        height: 44px;
+    
+        border-radius: 50%;
+        background-color: $address;
+        fill: $fill;
+    
+        transition: background-color 250ms $transition, fill 250ms $transition;
+        &:focus, &:hover {
+            fill: $address;
+            background-color: $accent-color;
+        }
+        &:hover .social-media__icon, &:focus .social-media__icon {
+            fill: $address;
+        }
+    }
+.social-media__icon {
+    width: 20px;
+    height: 20px;
+}

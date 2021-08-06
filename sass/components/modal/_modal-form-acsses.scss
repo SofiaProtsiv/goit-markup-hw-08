@@ -1,0 +1,48 @@
+.modal-form-access{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+    .modal-form-access__label{
+        display: flex;
+    
+        margin-left: 8px;
+    
+        font-weight: 400;
+        line-height: 1.7;
+        color: $title-text-color;
+    }
+
+    .modal-form-access__link{
+        margin-left: 4px;
+    
+        color: $accent-color;
+        text-decoration: underline;
+    }
+
+    .modal-form-access__checkbox{
+        position: absolute;
+        -webkit-appearance: none;
+    }
+
+    .modal-form-access__icon{
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        display: inline-block;
+    
+        border: 2px solid black;
+        border-radius: 4px;
+        fill: white;
+
+        .modal-form-access__checkbox:checked + &{
+            background-origin: content-box;
+            fill: white;
+            background-color: $accent-color;
+            border-radius: 4px;
+            border: none;
+        }
+    }

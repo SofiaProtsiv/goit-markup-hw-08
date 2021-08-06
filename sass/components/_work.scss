@@ -1,0 +1,25 @@
+.work{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.work__image {
+    position: relative;
+    width: 100%;
+    background-size: contain;
+}
+.work__title {
+    position: absolute;
+
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 27px 0;
+
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $address;
+
+    background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,38 @@
+.auth-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+    .auth-nav__item{
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+
+        &:hover, &:focus{
+            color: $title-text-color;
+            fill: $accent-color;
+            }
+    }
+
+    .auth-nav__link{
+        display: flex;
+        justify-content: center;
+    
+        text-align: center;
+        align-items: center;
+        color: $title-text-color;
+    
+        transition: color 250ms $transition;
+
+        &:hover, &:focus{
+            cursor: pointer;
+            color: $accent-color;
+            fill: $accent-color;
+        }
+    }
+
+    .auth-nav__icon{
+        margin-right: 10px;
+        fill: #757575;
+    }
+

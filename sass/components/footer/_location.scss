@@ -1,0 +1,27 @@
+.location {
+    margin-right: 70px;
+}
+
+.address{
+    margin-top: 20px;
+    font-style: normal;
+}
+.address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    .address__text {
+        color: $address;
+    }
+    .address__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+    }
+    .address__link, 
+    .address__text{
+        margin-bottom: 9px;
+    
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+

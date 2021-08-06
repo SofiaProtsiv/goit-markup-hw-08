@@ -1,0 +1,44 @@
+.modal-form{
+    padding: 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.modal-form__button{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+    
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    }
+
+    .modal-form__title{
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    
+        color: $primary-text-color;
+    }
+
+    .modal-form__icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+
+        &:hover, &:focus, .modal-form__button:focus &{
+            fill: $accent-color;
+            cursor: pointer;
+        }
+    }
