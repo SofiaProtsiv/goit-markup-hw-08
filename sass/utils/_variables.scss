@@ -1,3 +1,12 @@
+@media screen and (min-width: 480px) {
+    /* ... */
+  }
+  @media screen and (min-width: 768px) {
+    /* ... */
+  }
+  @media screen and (min-width: 1200px) {
+    /* ... */
+  }
 $primary-text-color: #212121;
 $title-text-color: #757575;
 $accent-color: #2196f3;
@@ -32,32 +41,90 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 .container {
-    width: 1200px;
+    width: 480px;
     padding: 0 15px;
     margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 480px;
 
     &--color {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-color: $button-two;
+        width: 480px;
     }
     &--no-padding{
-        padding-bottom: 94px;
+        padding-bottom: 60px;
         padding-top: 0;
     }
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &--color {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: $button-two;
+        }
+        &--no-padding{
+            padding-bottom: 60px;
+            padding-top: 0;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &--color {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: $button-two;
+        }
+        &--no-padding{
+            padding-bottom: 60px;
+            padding-top: 0;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &--color {
+            padding-top: 94px;
+            padding-bottom: 94px;
+            background-color: $button-two;
+        }
+        &--no-padding{
+            padding-bottom: 94px;
+            padding-top: 0;
+        }
+      }
 
 }
 .section__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 28px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 36px;
+      }
 }
 .hidden {
     position: absolute;

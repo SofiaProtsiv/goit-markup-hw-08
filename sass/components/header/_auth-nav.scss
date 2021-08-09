@@ -1,7 +1,18 @@
 .auth-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
+    display: none;
+    @media screen and (min-width: 480px) {
+        display: none;
+      }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+      }
 }
     .auth-nav__item{
         &:not(:last-child){

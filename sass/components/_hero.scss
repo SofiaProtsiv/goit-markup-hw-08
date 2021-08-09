@@ -1,19 +1,39 @@
 .hero {
     padding: 200px 0;
-
+    width: 480px;
     text-align: center;
     background: $bg-color;
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+      @media screen and (min-width: 768px) {
+
+      }
+      @media screen and (min-width: 1200px) {
+
+      }
 }
 .hero__title{
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     text-align: center;
     letter-spacing: 0.06em;
     color: $address;
+
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 26px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 44px;
+      }
 }

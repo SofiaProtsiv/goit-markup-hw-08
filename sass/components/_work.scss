@@ -1,3 +1,15 @@
+.section-work{
+    display: none;
+    @media screen and (min-width: 480px) {
+        display: none;
+      }
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+      @media screen and (min-width: 1200px) {
+        display: block;
+      }
+}
 .work{
     display: flex;
     justify-content: space-between;
