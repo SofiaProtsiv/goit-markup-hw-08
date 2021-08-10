@@ -1,8 +1,5 @@
 .auth-nav{
     display: none;
-    @media screen and (min-width: 480px) {
-        display: none;
-      }
       @media screen and (min-width: 768px) {
         display: block;
       }
@@ -18,9 +15,7 @@
             color: $title-text-color;
             fill: $accent-color;
             }
-        @media screen and (min-width: 480px) {
 
-        }
         @media screen and (min-width: 768px) {
           font-size: 12px;
             &:not(:last-child){
@@ -48,9 +43,6 @@
             color: $accent-color;
             fill: $accent-color;
         }
-        @media screen and (min-width: 480px) {
-
-          }
           @media screen and (min-width: 768px) {
             display: flex;
             font-size: 12px;

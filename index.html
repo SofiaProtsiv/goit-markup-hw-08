@@ -17,6 +17,42 @@
             <nav class="nav">
                 <a href="#" class="nav__logo"><span class="logo-style">Web</span>Studio</a
           >
+          <button type="button" class="menu__button menu__button--open" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+            <svg  class="menu-icon menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
+              <use class="menu__icon-menu" href="./images/icon.svg#icon-menu"></use>
+              <use class="menu__icon-cross" href="./images/icon.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <div class="nav-menu nav-menu--open" id="nav-menu" data-menu>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--current">Студия</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="portfolio.html" class="menu__link">Портфолио</a>
+                  </li>
+                  <li class="menu__item">
+                      <a href="#" class="menu__link">Контакты</a>
+                  </li>
+                </ul>
+                
+                <ul class="auth-menu">
+                  <li class="auth-menu__item">
+                      <a href="tel:+380961111111" class="auth-menu__link">+38 096 111 11 11</a>
+                  </li>
+                  <li class="auth-menu__item">
+                    <a href="mailto:info@devstudio.com" class="auth-menu__link auth-menu__link--color">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="media-menu">
+                <li class="media-menu__item"><a href="#" class="media-menu__link">Instagram</a></li>
+                <li class="media-menu__item"><a href="#" class="media-menu__link">Twitter</a></li>
+                <li class="media-menu__item"><a href="#" class="media-menu__link">Facebook</a></li>
+                <li class="media-menu__item"><a href="#" class="media-menu__link">Linkedin</a></li>
+              </ul>
+          </div>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link site-nav__link--current">Студия</a>
@@ -483,5 +519,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-button.js"></script>
 </body>
 </html>

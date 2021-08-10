@@ -44,12 +44,14 @@ ul {
 .container {
     padding: 0 15px;
     margin: 0 auto;
-      &--header {
-        padding: 0 15px;
-        margin: 0;
-      }
+
     @media screen and (min-width: 480px) {
         width: 480px;
+        &--header {
+          width: 100%;
+          padding: 0 15px;
+          margin: 0;
+        }
       }
       @media screen and (min-width: 768px) {
         width: 768px;
@@ -60,11 +62,7 @@ ul {
         margin: 0 auto;
       }
 }
-.container--header{
-  @media screen and (msx-width: 1200px) {
-    width: 1200px;
-  }
-}
+
 .section {
   width: 100%;
     padding-top: 60px;
@@ -75,43 +73,12 @@ ul {
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: $button-two;
-        width: 480px;
     }
     &--no-padding{
       width: 100%;
         padding-bottom: 60px;
         padding-top: 0;
     }
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        &--color {
-          width: 100%;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-color: $button-two;
-        }
-        &--no-padding{
-          width: 100%;
-            padding-bottom: 60px;
-            padding-top: 0;
-        }
-      }
-      @media screen and (min-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        &--color {
-            width: 100%;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            background-color: $button-two;
-        }
-        &--no-padding{
-          width: 100%;
-            padding-bottom: 60px;
-            padding-top: 0;
-        }
-      }
       @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -153,8 +120,10 @@ ul {
 }
 
 .flex {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
 }
 
 img {
