@@ -11,8 +11,10 @@
 }
     .auth-nav__item{
 
+      color: $title-text-color;
+      fill: $title-text-color;
         &:hover, &:focus{
-            color: $title-text-color;
+            color: $accent-color;
             fill: $accent-color;
             }
 
@@ -55,7 +57,7 @@
     }
 
     .auth-nav__icon{
-        fill: #757575;
+
         @media screen and (min-width: 768px) {
             width: 14px;
             margin-right: 8px;

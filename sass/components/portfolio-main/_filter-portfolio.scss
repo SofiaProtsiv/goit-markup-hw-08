@@ -1,10 +1,27 @@
 .filter-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 50px;
+      }
 }
-.filter-nav__item:not(:first-child) {
-    margin-left: 8px;
+.filter-nav__item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
 }
