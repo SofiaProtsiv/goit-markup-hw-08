@@ -4,7 +4,10 @@
         margin-top: 30px;
     }
     @media screen and (min-width: 768px) {
-      /* ... */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -29,15 +32,20 @@
         margin-bottom: 30px;
     }
     @media screen and (min-width: 480px) {
+        width: 450px;
         &:not(:last-child){
             margin-bottom: 30px;
         }
     }
     @media screen and (min-width: 768px) {
-      /* ... */
+        margin-bottom: 30px;
+        width: calc((100% - 1 * 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
+        width: calc((100% - 3 * 30px) / 4);
+        margin-bottom: 0;
         &:not(:last-child) {
+            margin-bottom: 0;
             margin-right: 30px;
         }
     }

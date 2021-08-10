@@ -4,31 +4,39 @@
         display: none;
       }
       @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        margin-left: auto;
+        display: block;
       }
       @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
+        align-items: center;
       }
 }
     .auth-nav__item{
-        &:not(:last-child){
-            margin-right: 50px;
-        }
 
         &:hover, &:focus{
             color: $title-text-color;
             fill: $accent-color;
             }
+        @media screen and (min-width: 480px) {
+
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 12px;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          &:not(:last-child){
+            margin-bottom: 0;
+              margin-right: 50px;
+          }
     }
+}
 
     .auth-nav__link{
-        display: flex;
-        justify-content: center;
-    
         text-align: center;
         align-items: center;
         color: $title-text-color;
@@ -40,10 +48,29 @@
             color: $accent-color;
             fill: $accent-color;
         }
+        @media screen and (min-width: 480px) {
+
+          }
+          @media screen and (min-width: 768px) {
+            display: flex;
+            font-size: 12px;
+          }
+          @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+          }
     }
 
     .auth-nav__icon{
-        margin-right: 10px;
         fill: #757575;
+        @media screen and (min-width: 768px) {
+            width: 14px;
+            margin-right: 8px;
+          }
+          @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+
+          }
     }
 

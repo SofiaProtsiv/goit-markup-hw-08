@@ -1,6 +1,7 @@
 .hero {
+    width: 100%;
     padding: 200px 0;
-    width: 480px;
+
     text-align: center;
     background: $bg-color;
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-image.jpg');
@@ -9,7 +10,7 @@
     background-size: cover;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+
       }
       @media screen and (min-width: 768px) {
 
