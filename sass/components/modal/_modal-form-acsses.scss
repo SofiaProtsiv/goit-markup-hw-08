@@ -5,15 +5,33 @@
     align-items: center;
 
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+width: auto;
+      }
+      @media screen and (min-width: 768px) {
+        /* ... */
+      }
 }
     .modal-form-access__label{
+
+        position: absolute;
+        right: 0;
         display: flex;
-    
-        margin-left: 8px;
-    
+
+        font-size: 12px;
+        line-height: 1.16;
         font-weight: 400;
-        line-height: 1.7;
+
+
         color: $title-text-color;
+
+          @media screen and (min-width: 1200px) {
+            right: 7px;
+            font-size: 14px;
+            line-height: 1.7;
+            
+        }
     }
 
     .modal-form-access__link{
@@ -30,14 +48,18 @@
 
     .modal-form-access__icon{
         position: absolute;
-        top: 4px;
-        left: 7px;
+        top: 0;
+        right: 100%;
         display: inline-block;
+        margin-right: 8px;
     
         border: 2px solid black;
         border-radius: 4px;
         fill: white;
-
+        @media screen and (min-width: 1200px) {
+            top: 4px;
+          
+      }
         .modal-form-access__checkbox:checked + &{
             background-origin: content-box;
             fill: white;

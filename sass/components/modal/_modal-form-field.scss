@@ -48,7 +48,7 @@
     }
 
     .modal-form-field__textarea{
-        width: 448px;
+        width: auto;
         height: 120px;
         margin-bottom: 20px;
         padding: 12px 16px;
@@ -59,6 +59,7 @@
         border-radius: 4px;
     
         cursor: pointer;
+
 
         &:hover, &:focus{
             border: 1px solid $accent-color;
