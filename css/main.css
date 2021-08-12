@@ -612,6 +612,7 @@ textarea {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -784,7 +785,6 @@ textarea {
 }
 
 .modal-form-access {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -804,9 +804,8 @@ textarea {
 }
 
 .modal-form-access__label {
-  position: absolute;
-  right: 0;
   display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.16;
   font-weight: 400;
@@ -815,14 +814,12 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .modal-form-access__label {
-    right: 7px;
     font-size: 14px;
     line-height: 1.7;
   }
 }
 
 .modal-form-access__link {
-  margin-left: 4px;
   color: #2196f3;
   text-decoration: underline;
 }
@@ -832,28 +829,18 @@ textarea {
   -webkit-appearance: none;
 }
 
-.modal-form-access__icon {
-  position: absolute;
-  top: 0;
-  right: 100%;
+.modal-form-access__span {
   display: inline-block;
+  width: 16px;
+  height: 15px;
   margin-right: 8px;
   border: 2px solid black;
   border-radius: 4px;
-  fill: white;
 }
 
-@media screen and (min-width: 1200px) {
-  .modal-form-access__icon {
-    top: 4px;
-  }
-}
-
-.modal-form-access__checkbox:checked + .modal-form-access__icon {
-  background-origin: content-box;
-  fill: white;
+.modal-form-access__checkbox:checked .modal-form-access__span {
+  fill: black;
   background-color: #2196f3;
-  border-radius: 4px;
   border: none;
 }
 
@@ -1485,7 +1472,9 @@ textarea {
 }
 
 .cardset__link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1527,18 +1516,13 @@ textarea {
 .cardset__overlay .cardset__info {
   position: absolute;
   top: 0;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .cardset__overlay .cardset__info {
-    padding: 77px 24px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1575,6 +1559,7 @@ textarea {
 }
 
 .cardset__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

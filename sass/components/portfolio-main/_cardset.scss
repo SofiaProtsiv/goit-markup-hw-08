@@ -16,6 +16,7 @@
             margin-bottom: 30px;
             @media screen and (min-width: 768px) {
                 margin-bottom: 0;
+
             }
         }
 
@@ -31,7 +32,9 @@
         }
     }
     .cardset__link {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
     
         transition: background 250ms $transition;
     
@@ -78,6 +81,7 @@
             position: absolute;
             top: 0;
         
+            padding: 77px 24px;
             font-weight: 400;
             font-size: 18px;
             line-height: 1.5;
@@ -85,10 +89,7 @@
         
             opacity: 0;
             transition: opacity 250ms $transition;
-            @media screen and (min-width: 480px) {
-                padding: 77px 24px;
 
-              }
               @media screen and (min-width: 768px) {
                 padding: 49px 24px;
               }
@@ -122,6 +123,7 @@
     }
         
     .cardset__description {
+        flex-grow: 1;
         padding: 20px 24px;
                 
         border-left: 1px solid #eeeeee;

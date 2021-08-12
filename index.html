@@ -17,14 +17,14 @@
             <nav class="nav">
                 <a href="#" class="nav__logo"><span class="logo-style">Web</span>Studio</a
           >
-          <button type="button" class="menu__button menu__button--open" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+          <button type="button" class="menu__button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
             <svg  class="menu-icon menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
               <use class="menu__icon-menu" href="./images/icon.svg#icon-menu"></use>
               <use class="menu__icon-cross" href="./images/icon.svg#icon-close"></use>
             </svg>
           </button>
 
-          <div class="nav-menu nav-menu--open" id="nav-menu" data-menu>
+          <div class="nav-menu" id="nav-menu" data-menu>
             <ul class="menu">
               <li class="menu__item">
                 <a href="#" class="menu__link menu__link--current">Студия</a>
@@ -94,7 +94,7 @@
                 <button data-open-modal type="button" class="button button--primary">Заказать услугу</button>
             </div>
             <div class="backdrop backdrop--hidden" data-backdrop>
-                <div class="modal">
+                <div class="modal ">
 
                 <form name="callback-form" autocomplete="off" class="modal-form">
 
@@ -138,11 +138,8 @@
                   </div>
 
                   <div role="group" class="modal-form-access">
-                    <label class="modal-form-access__label" for="access">Соглашаюсь с рассылкой и принимаю<a href="#" class="modal-form-access__link"> Условия договора</a>
+                    <label class="modal-form-access__label" for="access"> <span class="modal-form-access__span"></span>Соглашаюсь с рассылкой и принимаю<a href="#" class="modal-form-access__link"> Условия договора</a>
                       <input class="modal-form-access__checkbox hidden" type="checkbox" name="access" value="" id="access">
-                      <svg class="modal-form-access__icon" width="16px" height="15px">
-                        <use href="./images/icon.svg#icon-check" ></use>
-                      </svg>
                     </label>
                   </div>
 
