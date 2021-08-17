@@ -3,20 +3,22 @@
     flex-wrap: wrap;
 
     margin-bottom: 40px;
+    @media screen and (max-width: 768px) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-      }
-      @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-bottom: 50px;
-      }
+      margin-bottom: 50px;
+    }
 }
 .filter-nav__item:not(:last-child) {
     margin-right: 8px;

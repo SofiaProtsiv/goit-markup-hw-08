@@ -3,7 +3,18 @@
     border-bottom: 1px solid #ececec;
 }
 .page-header{
-    position: relative;
+    background-color: #fff;
+    @media screen and (max-width: 768px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 16px 0;
+        z-index: 5;
+      }
+      @media screen and (min-width: 768px) {
+        position: relative;
+      }
 }
 
 .logo-style {
