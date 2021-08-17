@@ -80,17 +80,23 @@
          & .cardset__info{
             position: absolute;
             top: 0;
-        
-            padding: 77px 24px;
+
             font-weight: 400;
-            font-size: 18px;
             line-height: 1.5;
             color: $address;
         
             opacity: 0;
             transition: opacity 250ms $transition;
-
+             @media screen and (max-width: 335px) {
+                font-size: 14px;
+                padding: 49px 24px;
+              }
+              @media screen and (min-width: 480px) {
+                font-size: 22px;
+                padding: 77px 24px;
+              }
               @media screen and (min-width: 768px) {
+                font-size: 18px;
                 padding: 49px 24px;
               }
               @media screen and (min-width: 1200px) {
