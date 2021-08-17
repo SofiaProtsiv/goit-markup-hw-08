@@ -6,8 +6,10 @@
 }
 .work{
     display: flex;
-    justify-content: space-between;
     margin-top: 50px;
+}
+.work__item:not(:last-child){
+    margin-right: 30px;
 }
 .work__image {
     position: relative;

@@ -1,23 +1,25 @@
 .auth-nav{
-    display: none;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
       @media screen and (min-width: 768px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
       }
 }
     .auth-nav__item{
-
-      color: $title-text-color;
-      fill: $title-text-color;
-        &:hover, &:focus{
-            color: $accent-color;
-            fill: $accent-color;
-            }
-
+      @media screen and (max-width: 768px) {
+        margin-bottom: 64px;
+        &:last-child{
+          margin-bottom: 32px;
+        }
+      }
         @media screen and (min-width: 768px) {
           font-size: 12px;
             &:not(:last-child){
@@ -45,6 +47,13 @@
             color: $accent-color;
             fill: $accent-color;
         }
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          &--color{
+            color: $accent-color;
+            font-size: 34px;
+          }
+        }
           @media screen and (min-width: 768px) {
             display: flex;
             font-size: 12px;
@@ -57,7 +66,9 @@
     }
 
     .auth-nav__icon{
-
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         @media screen and (min-width: 768px) {
             width: 14px;
             margin-right: 8px;

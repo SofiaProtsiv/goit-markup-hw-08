@@ -1,16 +1,20 @@
 .site-nav {
-    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 304px;
+    }
       @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        margin-left: auto;
+        margin-right: 84px;
       }
       @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: space-between;
-        margin-left: auto;
+        margin-right: 284px;
       }
+
 }
+
 .site-nav__item{
         position: relative;
 
@@ -21,50 +25,71 @@
         background-repeat: no-repeat;
         color: $title-text-color;
         fill: $title-text-color;
-    
+
+        @media screen and (max-width: 768px){
+            margin-bottom: 34px;
+            }
+        @media screen and (min-width: 768px){
         &:not(:last-child){
             margin-right: 50px;
         }
+        }
     }
+
     .site-nav__link{
-        display: block;
-
-        padding: 32px 0;
-    
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        align-items: center;
-        color: $primary-text-color;
-    
-        transition: color 250ms $transition;
-
-        &::after{
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        
+        @media screen and (max-width: 768px){
             display: block;
-            width: 100%;
-            height: 4px;
-        
-            background-color: $accent-color;
-            border-radius: 2px;
-        
-            opacity: 0;
-            transition:opacity 250ms $transition;
-        }
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 34px;
+            color: $primary-text-color;
 
-        &--current{
-            color: $accent-color;
-            border-bottom: 4px solid $accent-color
-        }
-
-        &:hover,&:focus {
-            color: $accent-color;
-
-            &::after{
-                opacity: 1;
+            &--current{
+                color: $accent-color;
             }
         }
+        @media screen and (min-width: 768px){
+            display: block;
+
+            padding: 32px 0;
+        
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            align-items: center;
+            color: $primary-text-color;
+        
+            transition: color 250ms $transition;
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            
+                display: block;
+                width: 100%;
+                height: 4px;
+            
+                background-color: $accent-color;
+                border-radius: 2px;
+            
+                opacity: 0;
+                transition:opacity 250ms $transition;
+            }
+        }
+    @media screen and (min-width: 768px) {
+        &--current{
+            color: $accent-color;
+            border-bottom: 4px solid $accent-color;
+        }
     }
+    &:hover, &:focus {
+        color: $accent-color;
+
+        &::after{
+            opacity: 1;
+        }
+    }
+}
+
+    

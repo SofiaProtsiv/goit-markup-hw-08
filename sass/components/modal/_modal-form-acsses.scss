@@ -6,12 +6,9 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
-width: auto;
-      }
-      @media screen and (min-width: 768px) {
-        /* ... */
-      }
-}
+        width: auto;
+        }
+    }
     .modal-form-access__label{
         display: flex;
         align-items: center;
@@ -25,7 +22,6 @@ width: auto;
           @media screen and (min-width: 1200px) {
             font-size: 14px;
             line-height: 1.7;
-            
         }
     }
 
@@ -34,10 +30,6 @@ width: auto;
         text-decoration: underline;
     }
 
-    .modal-form-access__checkbox{
-        position: absolute;
-        -webkit-appearance: none;
-    }
     .modal-form-access__span{
         display: inline-block;
         width: 16px;
@@ -46,11 +38,10 @@ width: auto;
 
         border: 2px solid black;
         border-radius: 4px;
-        .modal-form-access__checkbox:checked  &{
-            fill: black;
-            background-color: $accent-color;
-
+        .modal-form-access__checkbox:checked + &{
             border: none;
-      }
-
+            background-image: url('../../../images/icon-check.svg');
+            fill: #fff;
+            background-color: $accent-color;
+        }
     }

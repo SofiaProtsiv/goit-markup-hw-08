@@ -15,44 +15,15 @@
     <header class="page-header">
         <div class="container container--header flex">
             <nav class="nav">
-                <a href="#" class="nav__logo"><span class="logo-style">Web</span>Studio</a
-          >
-          <button type="button" class="menu__button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
-            <svg  class="menu-icon menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
-              <use class="menu__icon-menu" href="./images/icon.svg#icon-menu"></use>
-              <use class="menu__icon-cross" href="./images/icon.svg#icon-close"></use>
-            </svg>
-          </button>
+              <a href="#" class="nav__logo"><span class="logo-style">Web</span>Studio</a>
+              <button type="button" class="menu__button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+                <svg  class="menu-icon menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
+                  <use class="menu__icon-menu" href="./images/icon.svg#icon-menu"></use>
+                  <use class="menu__icon-cross" href="./images/icon.svg#icon-close"></use>
+                </svg>
+              </button>
 
-          <div class="nav-menu" id="nav-menu" data-menu>
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="#" class="menu__link menu__link--current">Студия</a>
-                  </li>
-                  <li class="menu__item">
-                      <a href="portfolio.html" class="menu__link">Портфолио</a>
-                  </li>
-                  <li class="menu__item">
-                      <a href="#footer" class="menu__link">Контакты</a>
-                  </li>
-                </ul>
-                
-                <ul class="auth-menu">
-                  <li class="auth-menu__item">
-                      <a href="tel:+380961111111" class="auth-menu__link">+38 096 111 11 11</a>
-                  </li>
-                  <li class="auth-menu__item">
-                    <a href="mailto:info@devstudio.com" class="auth-menu__link auth-menu__link--color">info@devstudio.com</a>
-                </li>
-              </ul>
-              <ul class="media-menu">
-                <li class="media-menu__item"><a href="#" class="media-menu__link">Instagram</a></li>
-                <li class="media-menu__item"><a href="#" class="media-menu__link">Twitter</a></li>
-                <li class="media-menu__item"><a href="#" class="media-menu__link">Facebook</a></li>
-                <li class="media-menu__item"><a href="#" class="media-menu__link">Linkedin</a></li>
-              </ul>
-          </div>
-
+          <div class="nav-menu"id="nav-menu" data-menu>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link site-nav__link--current">Студия</a>
@@ -64,7 +35,7 @@
                     <a href="#" class="site-nav__link">Контакты</a>
                 </li>
                 </ul>
-            </nav>
+
 
             <ul class="auth-nav">
                 <li class="auth-nav__item">
@@ -75,13 +46,20 @@
                     </a>
                 </li>
                 <li class="auth-nav__item">
-                    <a href="tel:+380961111111" class="auth-nav__link">
+                    <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--color">
                         <svg class="auth-nav__icon" width="10" height="16px"> 
                 <use href="./images/icon.svg#icon-phone"></use>
               </svg> +38 096 111 11 11
                     </a>
                 </li>
             </ul>
+            <ul class="media">
+              <li class="media__item"><a href="#" class="media__link">Instagram</a></li>
+              <li class="media__item"><a href="#" class="media__link">Twitter</a></li>
+              <li class="media__item"><a href="#" class="media__link">Facebook</a></li>
+              <li class="media__item"><a href="#" class="media__link">Linkedin</a></li>
+            </ul>
+          </nav>
         </div>
     </header>
 
@@ -94,7 +72,7 @@
                 <button data-open-modal type="button" class="button button--primary">Заказать услугу</button>
             </div>
             <div class="backdrop backdrop--hidden" data-backdrop>
-                <div class="modal ">
+                <div class="modal">
 
                 <form name="callback-form" autocomplete="off" class="modal-form">
 
@@ -134,12 +112,14 @@
 
                   <div class="modal-form-field">
                     <label class="modal-form-field__label" for="comment">Комментарий</label>
-                    <textarea class="modal-form-field__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <textarea class="modal-form-field__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"  maxlength="300"></textarea>
                   </div>
 
                   <div role="group" class="modal-form-access">
-                    <label class="modal-form-access__label" for="access"> <span class="modal-form-access__span"></span>Соглашаюсь с рассылкой и принимаю<a href="#" class="modal-form-access__link"> Условия договора</a>
+
+                    <label class="modal-form-access__label" for="access">
                       <input class="modal-form-access__checkbox hidden" type="checkbox" name="access" value="" id="access">
+                      <span class="modal-form-access__span"></span>Соглашаюсь с рассылкой и принимаю<a href="#" class="modal-form-access__link"> Условия договора</a>
                     </label>
                   </div>
 
