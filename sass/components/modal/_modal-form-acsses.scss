@@ -40,7 +40,7 @@
         border-radius: 4px;
         .modal-form-access__checkbox:checked + &{
             border: none;
-            background-image: url('../../../images/icon-check.svg');
+            background-image: url('../images/icon-check.svg');
             fill: #fff;
             background-color: $accent-color;
         }
