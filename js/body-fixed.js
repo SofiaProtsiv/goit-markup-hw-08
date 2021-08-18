@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $('.menu__button').click(function(event) {
         $('body').toggleClass('lock');
+        $('.menu__button').toggleClass('menu__button--open');
+        $('.nav-menu').toggleClass('nav-menu--open');
     });
 });
 

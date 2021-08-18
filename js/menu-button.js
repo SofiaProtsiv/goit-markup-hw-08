@@ -7,9 +7,9 @@
             const expanded = menuBtmRef.getAttribute("aria-expanded") === "true" || false;
 
 
-            menuBtmRef.classList.toggle("menu__button--open");
+            // menuBtmRef.classList.toggle("menu__button--open");
             menuBtmRef.setAttribute("aria-expanded", !expanded);
 
-            mobilMenuRef.classList.toggle("nav-menu--open");
+            // mobilMenuRef.classList.toggle("nav-menu--open");
         });
     })();
