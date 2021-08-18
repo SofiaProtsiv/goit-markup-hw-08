@@ -9,9 +9,7 @@
     }
 }
 .features__item{
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
+
     @media screen and (min-width: 768px) {
         width: calc((100% - 1 * 30px) / 2);
     }
@@ -20,6 +18,11 @@
         
         &:not(:last-child){
             margin-right: 30px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        &:not(:last-child){
+            margin-bottom: 30px;
         }
     }
 }

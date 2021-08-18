@@ -2,15 +2,9 @@
 .network{
     display: block;
     margin-bottom: 60px;
-    @media screen and (min-width: 480px) {
-        display: block;
-        margin-bottom: 60px;
-    }
-    @media screen and (min-width: 768px) {
-      /* ... */
-    }
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
+        margin-bottom: 0;
     }
 }
 .network__list {
@@ -18,9 +12,6 @@
         justify-content: center;
         @media screen and (min-width: 480px) {
             justify-content: center;
-        }
-        @media screen and (min-width: 768px) {
-          /* ... */
         }
         @media screen and (min-width: 1200px) {
             margin-right: 93px;

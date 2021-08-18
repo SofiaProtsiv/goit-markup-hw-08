@@ -1,5 +1,4 @@
 .header {
-    position: relative;
     border-bottom: 1px solid #ececec;
 }
 .page-header{
@@ -10,16 +9,18 @@
         top: 0;
         left: 0;
         padding: 16px 0;
-      }
-      @media screen and (min-width: 768px) {
-        position: relative;
+        z-index: 1;
+        &.scrolled {
+            background-color: $bg-color;
+            border: none;
+            transition: background-color 250ms $transition;
+          }
       }
 }
-
 .logo-style {
     color: $accent-color;
 }
-
 .secondary-logo {
-    color: $address;
+    color: $address;  
+    transition: color 200ms linear; 
 }
