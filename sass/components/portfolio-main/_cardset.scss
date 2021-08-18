@@ -87,8 +87,12 @@
         
             opacity: 0;
             transition: opacity 250ms $transition;
-             @media screen and (max-width: 335px) {
+            @media screen and (max-width: 400px) {
                 font-size: 14px;
+                padding: 49px 24px;
+              }
+              @media screen and (min-width: 400px) {
+                font-size: 22px;
                 padding: 49px 24px;
               }
               @media screen and (min-width: 480px) {
