@@ -642,7 +642,7 @@ textarea {
 
 .modal {
   position: absolute;
-  top: 25%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
@@ -656,14 +656,14 @@ textarea {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 440px) {
   .modal {
     width: 0;
-    min-width: 450px;
+    min-width: 320px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 441px) {
   .modal {
     max-width: 450px;
   }

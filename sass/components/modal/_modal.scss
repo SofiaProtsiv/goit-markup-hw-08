@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -16,18 +16,17 @@
         transform: translate(-50%, -50%) scale(0.9);
     }
 
-    @media screen and (max-width: 768px) {
-        width: 0;
-        min-width: 450px;
-      }
-      
-      @media screen and (min-width: 768px) {
-        max-width: 450px;
-      }
-      @media screen and (min-width: 1200px) {
-        min-width: 528px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    @media screen and (max-width: 440px) {
+      width: 0;
+      min-width: 320px;
+    }
+    @media screen and (min-width: 441px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 528px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 }
